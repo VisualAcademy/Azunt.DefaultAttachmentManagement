@@ -38,5 +38,11 @@
         <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.1" />
         <PackageReference Include="System.Configuration.ConfigurationManager" Version="8.0.1" />
     </ItemGroup>
+    
+    <!-- Include solution-root README and LICENSE in the NuGet package -->
+    <ItemGroup>
+        <None Include="..\..\..\README.md" Pack="true" PackagePath="" />
+        <None Include="..\..\..\LICENSE" Pack="true" PackagePath="" />
+    </ItemGroup>
 
 </Project>
